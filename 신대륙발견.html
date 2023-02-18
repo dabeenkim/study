@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function solution(month, day) {
+            let result = "";
+            let month1 = "";
+            let day1 = "";
+            const d_day = new Date(2023, month-1, day + 98);
+            month1 = d_day.getMonth()+1;
+            day1 = d_day.getDate();
+            console.log(`${month1}월 ${day1}일`);
+
+            return result;
+        }
+        console.log(solution(1, 18));
+
+    </script>
+
+</body>
+
+</html>
