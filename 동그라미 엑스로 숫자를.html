@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function solution(str) {
+            let answer = 0;
+            let count = 0;
+            
+            for (let i = 0; i < str.length; i++) {
+                //str의 i값에 O가 있을경우엔
+                if (str[i] === "O"){ 
+                //count에 1씩증가시켜준다.
+                //ex) "OOO" == "123"
+                    count++;
+                //count의 증가한 값들을 answer에 더해준다.
+                    answer += count;
+                  }else { 
+                count = 0;
+            }
+            
+        }return answer;
+    }
+        let str = "OXOOOXXXOXOOXOOOOOXO";
+        console.log(solution(str))
+    </script>
+
+</body>
+
+</html>
