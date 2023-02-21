@@ -15,4 +15,4 @@ function solution(arr) {
         answer += arr[i];  //answer에 arr의 값을 i번만큼 더해줘라
     }
     return answer/arr.length; //arr에 i만큼더한값을 arr.length로 나눠라
-}
+} 
